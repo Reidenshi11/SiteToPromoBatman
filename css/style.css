@@ -245,3 +245,9 @@ h1, h2, h3, p {
 .footer__copyright {
     color: #6A6A6A
 }
+
+.govkino {
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+}
