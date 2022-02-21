@@ -213,6 +213,7 @@ h1, h2, h3, p {
     background-position: top;
     background-size: cover;
     padding-left: 180px;
+    flex-direction: column;
 }
 
 .footer {
