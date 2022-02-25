@@ -78,10 +78,6 @@ h1, h2, h3, p {
     
 }
 
-.navigation__item {
-    display: flex;
-}
-
 .navigation__list {
     display: flex;
     text-transform: uppercase;
@@ -110,6 +106,30 @@ h1, h2, h3, p {
     display: block;
     width: 24px;
     height: 24px;
+    color: white;
+
+}
+
+.social__link:hover {
+    opacity: 0.5;
+}
+
+.social__link_facebook:hover { 
+    color: rgb(182, 5, 5);
+    transform: rotateY(720deg) scale(1.5);
+    transition: 1.5s transform ease-in-out, 0.7s opacity ease-in-out, 1.5s color ease-in-out;
+}
+
+.social__link_twitter:hover {
+    color: rgb(182, 5, 5);
+    transform: scale(1.5) rotateZ(360deg);
+    transition: 1s transform ease-in-out, 0.7s opacity ease-in-out, 1.5s color ease-in-out;
+}
+
+.social__link_instagram:hover {
+    color: rgb(182, 5, 5);
+    transform: rotateY(360deg) scale(1.5) rotateZ(360deg);
+    transition: 1s transform ease-in-out, 0.7s opacity ease-in-out, 1.5s color ease-in-out;
 }
 
 .social__item {
@@ -121,15 +141,21 @@ h1, h2, h3, p {
 }
 
 .social__link_facebook {
-    background-image: url('../img/logo_fb.svg');
+    outline: 0px rgb(0, 0, 0) solid;
+    /* outline-width: 6px; */
+    /* background-image: url('../img/logo_fb.svg'); */
 }
 
 .social__link_twitter {
-    background-image: url('../img/logo_tw.svg');
+    outline: 0px rgb(0, 0, 0) solid;
+    /* outline-width: 6px; */
+    /* background-image: url('../img/logo_tw.svg'); */
 }
 
 .social__link_instagram {
-    background-image: url('../img/logo_in.svg');
+    outline: 0px rgb(0, 0, 0) solid;
+    /* outline-width: 6px; */
+    /* background-image: url('../img/logo_in.svg'); */
 }
 
 .mute {
@@ -268,6 +294,7 @@ h1, h2, h3, p {
 
 @media (max-width: 768px) {
     .header {
+        min-height: 50px;
         display: flex;
         align-items: center;
         padding-left: 20px;
@@ -295,7 +322,7 @@ h1, h2, h3, p {
         padding-top: 90px;
         text-align: center;
         align-items: stretch;     
-        transition: transform 0.3s ease-in-out;    
+        transition: transform .3s ease-in-out;    
     }
 
     .navigation_active {
