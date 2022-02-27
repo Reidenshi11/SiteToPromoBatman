@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
     <link rel="preload" href="fonts/roboto-v29-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/roboto-v29-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+
     <title>Batman 2022</title>
 </head>
 <body>
@@ -17,9 +23,9 @@
             <button class="navigation__close"></button>
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active">Главная</a>
+                    <a class="navigation__link" href="index.html">Главная</a>
                     <a href="video.html" class="navigation__link">Видео</a>
-                    <a href="photo.html" class="navigation__link">Фото</a>
+                    <a href="photo.html" class="navigation__link navigation__link_active">Фото</a>
                 </li>
             </ul>
 
@@ -42,8 +48,39 @@
             <label for="mute" class="mute__label">mute</label>
         </div>
     </header>
-    <main class="main main_index">
-        <img class="logo" src="img/logo_batman.png" alt="Логотип к фильму Бэтмен 2022" width="329" height="235">
+    <main class="main main_slider">
+        <div class="slider-main swiper">
+            <ul class="slider-main__list swiper-wrapper">
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo01.jpg" alt="Brooding BATMAN (Задумчивый БЭТМЕН)" class="slider-main__img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo02.jpg" alt="Romantic BATMAN (Романтичный БЭТМЕН)" class="slider-main__img">
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <img src="photo/photo03.jpg" alt="A very serious BATMAN (Очень сурьезный БЭТМЕН)" class="slider-main__img">
+                </li>
+            </ul>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination__array"></button>
+
+            <div class="slider-thumbs swiper">
+                <ul class="slider-thumbs__list swiper-wrapper">
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo01-thumbs.jpg" alt="photo preview (Brooding BATMAN)" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo02-thumbs.jpg" alt="photo preview (Romantic BATMAN)" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="photo/photo03-thumbs.jpg" alt="photo preview (A very serious BATMAN)" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </main>
     <footer class="footer">
         <ul class="footer_links">
